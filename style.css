@@ -1,40 +1,71 @@
-header {
-    display: flex;
-    width: 100%;
+body{
+margin: 0;
+padding: 0;
+}
+
+header{
+background-color: blue;
+display: flex;
+height: 75px;
+justify-content: center;
+align-items: center;
+}
+
+header a{
+  height: 100%;
+  flex: 20%;
+  background-color: brown;
+  text-align: center;
 }
 
 header a img{
-    width: 127%;
-    z-index: 2;
+  width: 120px;
+  height: 100%;
 }
-body{
-    margin: 0;
-    padding: 0;
+nav{
+  display: flex;
+
+  background-color: aqua;
+  flex: 80%;
+  padding: 10px;
+  justify-content: flex-end ;
+
 }
-body img{
-    justify-content: right;
+nav p{
+  flex: 50%;
 }
+
 ul{
-    z-index: 2;
-    position: relative;
-    display: flex;
-    justify-content: right;
-    flex: 50%;
-    
+  flex: 50%;
+  background-color: brown;
+  position: relative;
+  display: flex;
+  list-style: none;
+  justify-content: right;
+}
+
+ul,li{
+  margin: 0;
+  padding: 0;
+}
+
+ul li{
+  flex: 20%;
+  justify-content:center ;
 }
 ul li a{
-    border: solid 2px #0000;
-    display: block;
-    background-color: rgb(155, 85, 85);
+  display: block;
+  padding: 2px;
+  border: solid 2px rgb(0, 0, 0) ;
+  text-decoration: none;
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+  text-align: center;
 }
-menu{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+
+ul li:hover a{
+  border: solid 2px rgb(255, 255, 255) ;
+  background-color:rgb(255, 0, 0) ;
+  color: #ffffff;
 }
-footer{
-background-color: rgb(36, 36, 36);
-}
-footer img{
-    width: 100%;
-}
+  
